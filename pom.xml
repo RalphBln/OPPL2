@@ -15,8 +15,6 @@
 	<description>OPPL 2 is a language for querying and manipulating OWL ontologies</description>
 	<url>https://github.com/owlcs/OPPL2</url>
 
-
-
 	<issueManagement>
 		<system>github</system>
 		<url>https://github.com/owlcs/OPPL2/issues</url>
