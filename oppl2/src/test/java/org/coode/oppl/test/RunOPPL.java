@@ -36,15 +36,11 @@ public class RunOPPL {
     public void feedOPPL(String script, OWLOntology ontology) {
         String opplScriptString = script;
         ParserFactory parserFactory = new ParserFactory(ontology.getOWLOntologyManager(), ontology, null);
-        // OPPLParser parser = parserFactory.build(new SystemErrorEcho());
         AnnotationBasedSymbolTableFactory annotationBasedSymbolTableFactory = new AnnotationBasedSymbolTableFactory(
             ontology.getOWLOntologyManager(), Arrays.asList(ontology.getOWLOntologyManager().getOWLDataFactory()
                 .getRDFSLabel().getIRI()));
         OPPLParser parser = parserFactory.build(new SystemErrorEcho(),
             annotationBasedSymbolTableFactory);
-        // OPPLParser parser = parserFactory.build(new SystemErrorEcho(), new
-        // AnnotationBasedSymbolTableFactory(ontologyManager,
-        // Arrays.asList(ontologyManager.getOWLDataFactory().getRDFSLabel().getIRI())));
         OPPLScript parsed = parser.parse(opplScriptString);
         ChangeExtractor extractor = new ChangeExtractor(new RuntimeExceptionHandler() {
 

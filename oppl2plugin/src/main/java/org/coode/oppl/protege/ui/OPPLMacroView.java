@@ -48,6 +48,7 @@ import org.coode.oppl.protege.ProtegeParserFactory;
 import org.coode.oppl.protege.ui.rendering.VariableOWLCellRenderer;
 import org.coode.oppl.utils.AbstractVariableVisitorExAdapter;
 import org.coode.oppl.variabletypes.InputVariable;
+import org.protege.editor.core.ui.list.MListItem;
 import org.protege.editor.core.ui.util.ComponentFactory;
 import org.protege.editor.owl.model.OWLModelManager;
 import org.protege.editor.owl.ui.renderer.OWLCellRenderer;
